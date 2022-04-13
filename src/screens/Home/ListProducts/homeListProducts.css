@@ -1,0 +1,119 @@
+.m-containerListProducts {
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.m-containerListProducts__cardProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0.5rem;
+
+  width: 24rem;
+  height: 28rem;
+
+  border: 0.1rem solid rgba(0, 0, 0, 10%);
+}
+
+.m-containerListProducts__image {
+  display: flex;
+  margin-top: 1rem;
+  width: 22rem;
+  height: 13rem;
+}
+
+.m-containerListProducts__namePrice {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.m-containerListProducts__name {
+  text-align: center;
+  max-height: 4rem;
+  width: 22rem;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.m-containerListProducts__price {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.m-containerListProducts__price span {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.m-containerListProductsButtonBuy {
+  display: flex;
+  width: 100%;
+}
+
+/* 550px */
+@media (max-width: 34.375em) {
+  .m-containerListProducts {
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+
+  .m-containerListProducts__cardProduct {
+    flex-direction: row;
+    margin: 0.5rem 0.5rem;
+
+    width: 98%;
+    height: 9.5rem;
+
+    border: 0.1rem solid rgb(0, 0, 0);
+  }
+
+  .m-containerListProducts__image {
+    width: 12rem;
+    height: 7.9rem;
+    margin: 0 0 0 0.5rem;
+  }
+
+  .m-containerListProducts__image img {
+    width: 12rem;
+    height: 7.9rem;
+  }
+
+  .m-containerListProducts__namePrice {
+    justify-content: center;
+  }
+
+  .m-containerListProductsButtonBuy {
+    display: none;
+  }
+}
+
+@media (max-width: 23.75em) {
+  .m-containerListProducts__image {
+    width: 100%;
+  }
+
+  .m-containerListProducts__image img {
+    width: 100%;
+  }
+
+  .m-containerListProducts__name {
+    font-size: 1.6rem;
+    width: 18rem;
+  }
+
+  .m-containerListProducts__price {
+    font-size: 1.8rem;
+  }
+
+  .m-containerListProducts__price span {
+    font-size: 1rem;
+  }
+}
